@@ -25,3 +25,11 @@ function createCommenterLabel(commenter) {
   commenterDiv.appendChild(commenterLabel);
   return commenterLabel;
 }
+
+function postNewComment(body, commenter) {
+  var commentsDiv = document.getElementById('comments');
+  var newCommentDiv = document.createElement('div');
+  newCommentDiv.appendChild(body);
+  newCommentDiv.appendChild(commenter);
+  commentsDiv.appendChild(newCommentDiv);
+}
